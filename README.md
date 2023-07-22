@@ -16,3 +16,10 @@ dtparam=spi=on
 | MOSI | 5 | 19 |
 | SCLK | 6 | 23 |
 | VCC | 8 | 17 |
+
+## Cmds
+```
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -r [ oldbios]
+flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -w [newbios] 
+```
